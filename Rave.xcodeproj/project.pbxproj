@@ -1,0 +1,865 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04D5413712BCE3661795F3D0 /* Pods_RaveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A450EB78B91554DA8D08AC2F /* Pods_RaveTests.framework */; };
+		47E1B5F024D1C0C100C1EC8B /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E1B5EE24D1C0C100C1EC8B /* IQKeyboardManagerSwift.framework */; };
+		47E1B5F124D1C0C100C1EC8B /* IQKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E1B5EF24D1C0C100C1EC8B /* IQKeyboardManager.framework */; };
+		47E1B5F324D1C0CD00C1EC8B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E1B5F224D1C0CD00C1EC8B /* Alamofire.framework */; };
+		47E1B5F524D1C0E300C1EC8B /* CreditCardValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E1B5F424D1C0E300C1EC8B /* CreditCardValidator.framework */; };
+		47E1B5F724D1C10100C1EC8B /* PopupDialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E1B5F624D1C10100C1EC8B /* PopupDialog.framework */; };
+		785D84701F336653003B8B26 /* Rave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785D84661F336653003B8B26 /* Rave.framework */; };
+		785D84751F336653003B8B26 /* RaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D84741F336653003B8B26 /* RaveTests.swift */; };
+		785D84771F336653003B8B26 /* Rave.h in Headers */ = {isa = PBXBuildFile; fileRef = 785D84691F336653003B8B26 /* Rave.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		785D84871F3369F9003B8B26 /* BankConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D84861F3369F9003B8B26 /* BankConverter.swift */; };
+		785D84891F336A14003B8B26 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D84881F336A14003B8B26 /* Bank.swift */; };
+		785D848B1F336A92003B8B26 /* RavePayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D848A1F336A92003B8B26 /* RavePayService.swift */; };
+		785D848D1F336A9C003B8B26 /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D848C1F336A9C003B8B26 /* URLHelper.swift */; };
+		785D848F1F336AA2003B8B26 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D848E1F336AA2003B8B26 /* Constants.swift */; };
+		785D84911F336AA8003B8B26 /* TripleDES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D84901F336AA8003B8B26 /* TripleDES.swift */; };
+		785D84931F336AAF003B8B26 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D84921F336AAF003B8B26 /* Extension.swift */; };
+		785D84951F336AC2003B8B26 /* RavePayConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D84941F336AC2003B8B26 /* RavePayConfig.swift */; };
+		785D84971F336AD2003B8B26 /* VSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D84961F336AD2003B8B26 /* VSTextField.swift */; };
+		785D84991F336AD8003B8B26 /* CustomSegementControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D84981F336AD8003B8B26 /* CustomSegementControl.swift */; };
+		785D849B1F336AEB003B8B26 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D849A1F336AEB003B8B26 /* WebViewController.swift */; };
+		785D849D1F336AF0003B8B26 /* RavePayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D849C1F336AF0003B8B26 /* RavePayManager.swift */; };
+		785D849F1F336AF6003B8B26 /* RavePayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D849E1F336AF6003B8B26 /* RavePayController.swift */; };
+		785D84A11F336AFC003B8B26 /* OTPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D84A01F336AFC003B8B26 /* OTPController.swift */; };
+		785D84A41F336B24003B8B26 /* Rave.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D84A31F336B24003B8B26 /* Rave.storyboard */; };
+		785D84A71F336E06003B8B26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 785D84A61F336E06003B8B26 /* Assets.xcassets */; };
+		789CBACA20D0096700DA2526 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789CBAC920D0096700DA2526 /* Alamofire.framework */; };
+		789CBACC20D0096700DA2526 /* BSErrorMessageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789CBACB20D0096700DA2526 /* BSErrorMessageView.framework */; };
+		789CBAD020D0096700DA2526 /* CreditCardValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789CBACF20D0096700DA2526 /* CreditCardValidator.framework */; };
+		789CBAD620D0096700DA2526 /* KVNProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789CBAD520D0096700DA2526 /* KVNProgress.framework */; };
+		789CBAD820D0096700DA2526 /* PopupDialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789CBAD720D0096700DA2526 /* PopupDialog.framework */; };
+		789CBADA20D0096700DA2526 /* Shimmer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789CBAD920D0096700DA2526 /* Shimmer.framework */; };
+		789CBADC20D0096700DA2526 /* SwiftValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789CBADB20D0096700DA2526 /* SwiftValidator.framework */; };
+		789CBB4E20D7AB7400DA2526 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789CBB4D20D7AB7400DA2526 /* IQKeyboardManagerSwift.framework */; };
+		D3EC3CD2508137BA5A22829C /* Pods_Rave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84055437D4D503261431AB3D /* Pods_Rave.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		785D84711F336653003B8B26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 785D845D1F336653003B8B26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 785D84651F336653003B8B26;
+			remoteInfo = Rave;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		005477E46E9FD9B1322EE6EC /* Pods-RaveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaveTests/Pods-RaveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		12982800246CE4B01FD71EA4 /* Pods-Rave.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rave.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rave/Pods-Rave.debug.xcconfig"; sourceTree = "<group>"; };
+		47E1B5EE24D1C0C100C1EC8B /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
+		47E1B5EF24D1C0C100C1EC8B /* IQKeyboardManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IQKeyboardManager.framework; sourceTree = "<group>"; };
+		47E1B5F224D1C0CD00C1EC8B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		47E1B5F424D1C0E300C1EC8B /* CreditCardValidator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CreditCardValidator.framework; sourceTree = "<group>"; };
+		47E1B5F624D1C10100C1EC8B /* PopupDialog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PopupDialog.framework; sourceTree = "<group>"; };
+		7815757A2028561B0043B587 /* Shimmer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Shimmer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7815757C2028567F0043B587 /* Shimmer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Shimmer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7815757E202856D70043B587 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		785D84661F336653003B8B26 /* Rave.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rave.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		785D84691F336653003B8B26 /* Rave.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rave.h; sourceTree = "<group>"; };
+		785D846A1F336653003B8B26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		785D846F1F336653003B8B26 /* RaveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		785D84741F336653003B8B26 /* RaveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaveTests.swift; sourceTree = "<group>"; };
+		785D84761F336653003B8B26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		785D84861F3369F9003B8B26 /* BankConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankConverter.swift; sourceTree = "<group>"; };
+		785D84881F336A14003B8B26 /* Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		785D848A1F336A92003B8B26 /* RavePayService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RavePayService.swift; sourceTree = "<group>"; };
+		785D848C1F336A9C003B8B26 /* URLHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLHelper.swift; sourceTree = "<group>"; };
+		785D848E1F336AA2003B8B26 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		785D84901F336AA8003B8B26 /* TripleDES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripleDES.swift; sourceTree = "<group>"; };
+		785D84921F336AAF003B8B26 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		785D84941F336AC2003B8B26 /* RavePayConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RavePayConfig.swift; sourceTree = "<group>"; };
+		785D84961F336AD2003B8B26 /* VSTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSTextField.swift; sourceTree = "<group>"; };
+		785D84981F336AD8003B8B26 /* CustomSegementControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegementControl.swift; sourceTree = "<group>"; };
+		785D849A1F336AEB003B8B26 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		785D849C1F336AF0003B8B26 /* RavePayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RavePayManager.swift; sourceTree = "<group>"; };
+		785D849E1F336AF6003B8B26 /* RavePayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RavePayController.swift; sourceTree = "<group>"; };
+		785D84A01F336AFC003B8B26 /* OTPController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPController.swift; sourceTree = "<group>"; };
+		785D84A31F336B24003B8B26 /* Rave.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Rave.storyboard; sourceTree = "<group>"; };
+		785D84A61F336E06003B8B26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7873281F20172C6A0012C5A0 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7873282020172C6A0012C5A0 /* BSErrorMessageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BSErrorMessageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7873282120172C6A0012C5A0 /* KVNProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KVNProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7873282220172C6A0012C5A0 /* PopupDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PopupDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7873282320172C6A0012C5A0 /* Shimmer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Shimmer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7873282420172C6A0012C5A0 /* SwiftValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		788B58A92031E9FF00E31B1C /* CreditCardValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CreditCardValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBAAF20CFD61100DA2526 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBAB120CFD61100DA2526 /* BSErrorMessageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BSErrorMessageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBAB320CFD61100DA2526 /* CountryPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CountryPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBAB520CFD61100DA2526 /* CreditCardValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CreditCardValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBAB720CFD61100DA2526 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBAB920CFD61100DA2526 /* KVNProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KVNProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBABB20CFD61100DA2526 /* PopupDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PopupDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBABD20CFD61100DA2526 /* Shimmer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Shimmer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBABF20CFD67600DA2526 /* SwiftValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBAC920D0096700DA2526 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBACB20D0096700DA2526 /* BSErrorMessageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BSErrorMessageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBACD20D0096700DA2526 /* CountryPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CountryPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBACF20D0096700DA2526 /* CreditCardValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CreditCardValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBAD120D0096700DA2526 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBAD320D0096700DA2526 /* DynamicBlurView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DynamicBlurView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBAD520D0096700DA2526 /* KVNProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KVNProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBAD720D0096700DA2526 /* PopupDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PopupDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBAD920D0096700DA2526 /* Shimmer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Shimmer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBADB20D0096700DA2526 /* SwiftValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBAE120D00D8700DA2526 /* ThrivesendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThrivesendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		789CBB4D20D7AB7400DA2526 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789D92F82029FD450047DFC3 /* Shimmer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Shimmer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78EDC15B1F345B530087CCEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84055437D4D503261431AB3D /* Pods_Rave.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rave.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		972E5ED5CC61FF24277822A4 /* Pods-Rave.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rave.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rave/Pods-Rave.release.xcconfig"; sourceTree = "<group>"; };
+		A450EB78B91554DA8D08AC2F /* Pods_RaveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB45CBF9CE9A9A127878C75 /* Pods-RaveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaveTests/Pods-RaveTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		785D84621F336653003B8B26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789CBB4E20D7AB7400DA2526 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				789CBACA20D0096700DA2526 /* Alamofire.framework in Frameworks */,
+				789CBACC20D0096700DA2526 /* BSErrorMessageView.framework in Frameworks */,
+				789CBAD020D0096700DA2526 /* CreditCardValidator.framework in Frameworks */,
+				47E1B5F524D1C0E300C1EC8B /* CreditCardValidator.framework in Frameworks */,
+				47E1B5F724D1C10100C1EC8B /* PopupDialog.framework in Frameworks */,
+				789CBAD620D0096700DA2526 /* KVNProgress.framework in Frameworks */,
+				789CBAD820D0096700DA2526 /* PopupDialog.framework in Frameworks */,
+				47E1B5F024D1C0C100C1EC8B /* IQKeyboardManagerSwift.framework in Frameworks */,
+				47E1B5F324D1C0CD00C1EC8B /* Alamofire.framework in Frameworks */,
+				47E1B5F124D1C0C100C1EC8B /* IQKeyboardManager.framework in Frameworks */,
+				789CBADA20D0096700DA2526 /* Shimmer.framework in Frameworks */,
+				789CBADC20D0096700DA2526 /* SwiftValidator.framework in Frameworks */,
+				D3EC3CD2508137BA5A22829C /* Pods_Rave.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		785D846C1F336653003B8B26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				785D84701F336653003B8B26 /* Rave.framework in Frameworks */,
+				04D5413712BCE3661795F3D0 /* Pods_RaveTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		789CBADE20D00D8700DA2526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BC1DE66021AC6A862465BAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12982800246CE4B01FD71EA4 /* Pods-Rave.debug.xcconfig */,
+				972E5ED5CC61FF24277822A4 /* Pods-Rave.release.xcconfig */,
+				005477E46E9FD9B1322EE6EC /* Pods-RaveTests.debug.xcconfig */,
+				BEB45CBF9CE9A9A127878C75 /* Pods-RaveTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		785D845C1F336653003B8B26 = {
+			isa = PBXGroup;
+			children = (
+				785D84681F336653003B8B26 /* Rave */,
+				785D84731F336653003B8B26 /* RaveTests */,
+				785D84671F336653003B8B26 /* Products */,
+				5BC1DE66021AC6A862465BAA /* Pods */,
+				B2E99C65C2C7BE488B609EF9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		785D84671F336653003B8B26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				785D84661F336653003B8B26 /* Rave.framework */,
+				785D846F1F336653003B8B26 /* RaveTests.xctest */,
+				789CBAE120D00D8700DA2526 /* ThrivesendUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		785D84681F336653003B8B26 /* Rave */ = {
+			isa = PBXGroup;
+			children = (
+				785D84A51F336DF8003B8B26 /* Resources */,
+				785D84A21F336B15003B8B26 /* Storyboard */,
+				785D84851F3369DB003B8B26 /* JSONConverter */,
+				785D84841F336986003B8B26 /* Views */,
+				785D84831F33696D003B8B26 /* Controllers */,
+				785D84821F33695C003B8B26 /* Utils */,
+				785D84811F33693F003B8B26 /* NetworkService */,
+				785D84801F336938003B8B26 /* Model */,
+				785D84691F336653003B8B26 /* Rave.h */,
+				785D846A1F336653003B8B26 /* Info.plist */,
+			);
+			path = Rave;
+			sourceTree = "<group>";
+		};
+		785D84731F336653003B8B26 /* RaveTests */ = {
+			isa = PBXGroup;
+			children = (
+				785D84741F336653003B8B26 /* RaveTests.swift */,
+				785D84761F336653003B8B26 /* Info.plist */,
+			);
+			path = RaveTests;
+			sourceTree = "<group>";
+		};
+		785D84801F336938003B8B26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				785D84881F336A14003B8B26 /* Bank.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		785D84811F33693F003B8B26 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				785D848A1F336A92003B8B26 /* RavePayService.swift */,
+			);
+			name = NetworkService;
+			sourceTree = "<group>";
+		};
+		785D84821F33695C003B8B26 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				785D84941F336AC2003B8B26 /* RavePayConfig.swift */,
+				785D84921F336AAF003B8B26 /* Extension.swift */,
+				785D848E1F336AA2003B8B26 /* Constants.swift */,
+				785D84901F336AA8003B8B26 /* TripleDES.swift */,
+				785D848C1F336A9C003B8B26 /* URLHelper.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		785D84831F33696D003B8B26 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				785D849A1F336AEB003B8B26 /* WebViewController.swift */,
+				785D849C1F336AF0003B8B26 /* RavePayManager.swift */,
+				785D84A01F336AFC003B8B26 /* OTPController.swift */,
+				785D849E1F336AF6003B8B26 /* RavePayController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		785D84841F336986003B8B26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				785D84981F336AD8003B8B26 /* CustomSegementControl.swift */,
+				785D84961F336AD2003B8B26 /* VSTextField.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		785D84851F3369DB003B8B26 /* JSONConverter */ = {
+			isa = PBXGroup;
+			children = (
+				785D84861F3369F9003B8B26 /* BankConverter.swift */,
+			);
+			name = JSONConverter;
+			sourceTree = "<group>";
+		};
+		785D84A21F336B15003B8B26 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				785D84A31F336B24003B8B26 /* Rave.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		785D84A51F336DF8003B8B26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				785D84A61F336E06003B8B26 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B2E99C65C2C7BE488B609EF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47E1B5F624D1C10100C1EC8B /* PopupDialog.framework */,
+				47E1B5F424D1C0E300C1EC8B /* CreditCardValidator.framework */,
+				47E1B5F224D1C0CD00C1EC8B /* Alamofire.framework */,
+				47E1B5EF24D1C0C100C1EC8B /* IQKeyboardManager.framework */,
+				789CBB4D20D7AB7400DA2526 /* IQKeyboardManagerSwift.framework */,
+				47E1B5EE24D1C0C100C1EC8B /* IQKeyboardManagerSwift.framework */,
+				789CBAC920D0096700DA2526 /* Alamofire.framework */,
+				789CBACB20D0096700DA2526 /* BSErrorMessageView.framework */,
+				789CBACD20D0096700DA2526 /* CountryPicker.framework */,
+				789CBACF20D0096700DA2526 /* CreditCardValidator.framework */,
+				789CBAD120D0096700DA2526 /* CryptoSwift.framework */,
+				789CBAD320D0096700DA2526 /* DynamicBlurView.framework */,
+				789CBAD520D0096700DA2526 /* KVNProgress.framework */,
+				789CBAD720D0096700DA2526 /* PopupDialog.framework */,
+				789CBAD920D0096700DA2526 /* Shimmer.framework */,
+				789CBADB20D0096700DA2526 /* SwiftValidator.framework */,
+				789CBABF20CFD67600DA2526 /* SwiftValidator.framework */,
+				789CBAAF20CFD61100DA2526 /* Alamofire.framework */,
+				789CBAB120CFD61100DA2526 /* BSErrorMessageView.framework */,
+				789CBAB320CFD61100DA2526 /* CountryPicker.framework */,
+				789CBAB520CFD61100DA2526 /* CreditCardValidator.framework */,
+				789CBAB720CFD61100DA2526 /* CryptoSwift.framework */,
+				789CBAB920CFD61100DA2526 /* KVNProgress.framework */,
+				789CBABB20CFD61100DA2526 /* PopupDialog.framework */,
+				789CBABD20CFD61100DA2526 /* Shimmer.framework */,
+				788B58A92031E9FF00E31B1C /* CreditCardValidator.framework */,
+				789D92F82029FD450047DFC3 /* Shimmer.framework */,
+				7815757E202856D70043B587 /* Alamofire.framework */,
+				7815757C2028567F0043B587 /* Shimmer.framework */,
+				7815757A2028561B0043B587 /* Shimmer.framework */,
+				7873281F20172C6A0012C5A0 /* Alamofire.framework */,
+				7873282020172C6A0012C5A0 /* BSErrorMessageView.framework */,
+				7873282120172C6A0012C5A0 /* KVNProgress.framework */,
+				7873282220172C6A0012C5A0 /* PopupDialog.framework */,
+				7873282320172C6A0012C5A0 /* Shimmer.framework */,
+				7873282420172C6A0012C5A0 /* SwiftValidator.framework */,
+				78EDC15B1F345B530087CCEB /* UIKit.framework */,
+				84055437D4D503261431AB3D /* Pods_Rave.framework */,
+				A450EB78B91554DA8D08AC2F /* Pods_RaveTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		785D84631F336653003B8B26 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				785D84771F336653003B8B26 /* Rave.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		785D84651F336653003B8B26 /* Rave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 785D847A1F336653003B8B26 /* Build configuration list for PBXNativeTarget "Rave" */;
+			buildPhases = (
+				AD5D506312D71BD62B2068AB /* [CP] Check Pods Manifest.lock */,
+				785D84611F336653003B8B26 /* Sources */,
+				785D84621F336653003B8B26 /* Frameworks */,
+				785D84631F336653003B8B26 /* Headers */,
+				785D84641F336653003B8B26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rave;
+			productName = Rave;
+			productReference = 785D84661F336653003B8B26 /* Rave.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		785D846E1F336653003B8B26 /* RaveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 785D847D1F336653003B8B26 /* Build configuration list for PBXNativeTarget "RaveTests" */;
+			buildPhases = (
+				429164DC718DEE9EF8D16D40 /* [CP] Check Pods Manifest.lock */,
+				785D846B1F336653003B8B26 /* Sources */,
+				785D846C1F336653003B8B26 /* Frameworks */,
+				785D846D1F336653003B8B26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				785D84721F336653003B8B26 /* PBXTargetDependency */,
+			);
+			name = RaveTests;
+			productName = RaveTests;
+			productReference = 785D846F1F336653003B8B26 /* RaveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		789CBAE020D00D8700DA2526 /* ThrivesendUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 789CBAE620D00D8700DA2526 /* Build configuration list for PBXNativeTarget "ThrivesendUITests" */;
+			buildPhases = (
+				789CBADD20D00D8700DA2526 /* Sources */,
+				789CBADE20D00D8700DA2526 /* Frameworks */,
+				789CBADF20D00D8700DA2526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThrivesendUITests;
+			productName = ThrivesendUITests;
+			productReference = 789CBAE120D00D8700DA2526 /* ThrivesendUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		785D845D1F336653003B8B26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Olusegun Solaja";
+				TargetAttributes = {
+					785D84651F336653003B8B26 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = EEN5SMD5RF;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					785D846E1F336653003B8B26 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = EEN5SMD5RF;
+						ProvisioningStyle = Automatic;
+					};
+					789CBAE020D00D8700DA2526 = {
+						CreatedOnToolsVersion = 9.4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 785D84601F336653003B8B26 /* Build configuration list for PBXProject "Rave" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 785D845C1F336653003B8B26;
+			productRefGroup = 785D84671F336653003B8B26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				785D84651F336653003B8B26 /* Rave */,
+				785D846E1F336653003B8B26 /* RaveTests */,
+				789CBAE020D00D8700DA2526 /* ThrivesendUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		785D84641F336653003B8B26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				785D84A71F336E06003B8B26 /* Assets.xcassets in Resources */,
+				785D84A41F336B24003B8B26 /* Rave.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		785D846D1F336653003B8B26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		789CBADF20D00D8700DA2526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		429164DC718DEE9EF8D16D40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RaveTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD5D506312D71BD62B2068AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rave-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		785D84611F336653003B8B26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				785D84911F336AA8003B8B26 /* TripleDES.swift in Sources */,
+				785D849B1F336AEB003B8B26 /* WebViewController.swift in Sources */,
+				785D84971F336AD2003B8B26 /* VSTextField.swift in Sources */,
+				785D84991F336AD8003B8B26 /* CustomSegementControl.swift in Sources */,
+				785D848F1F336AA2003B8B26 /* Constants.swift in Sources */,
+				785D84931F336AAF003B8B26 /* Extension.swift in Sources */,
+				785D84871F3369F9003B8B26 /* BankConverter.swift in Sources */,
+				785D84951F336AC2003B8B26 /* RavePayConfig.swift in Sources */,
+				785D848D1F336A9C003B8B26 /* URLHelper.swift in Sources */,
+				785D84A11F336AFC003B8B26 /* OTPController.swift in Sources */,
+				785D84891F336A14003B8B26 /* Bank.swift in Sources */,
+				785D849F1F336AF6003B8B26 /* RavePayController.swift in Sources */,
+				785D849D1F336AF0003B8B26 /* RavePayManager.swift in Sources */,
+				785D848B1F336A92003B8B26 /* RavePayService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		785D846B1F336653003B8B26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				785D84751F336653003B8B26 /* RaveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		789CBADD20D00D8700DA2526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		785D84721F336653003B8B26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 785D84651F336653003B8B26 /* Rave */;
+			targetProxy = 785D84711F336653003B8B26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		785D84781F336653003B8B26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		785D84791F336653003B8B26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		785D847B1F336653003B8B26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12982800246CE4B01FD71EA4 /* Pods-Rave.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EEN5SMD5RF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_NO_COMMON_BLOCKS = NO;
+				INFOPLIST_FILE = Rave/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = flutterwave.Rave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		785D847C1F336653003B8B26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 972E5ED5CC61FF24277822A4 /* Pods-Rave.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EEN5SMD5RF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_NO_COMMON_BLOCKS = NO;
+				INFOPLIST_FILE = Rave/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = flutterwave.Rave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		785D847E1F336653003B8B26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 005477E46E9FD9B1322EE6EC /* Pods-RaveTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				DEVELOPMENT_TEAM = EEN5SMD5RF;
+				INFOPLIST_FILE = RaveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = flutterwave.RaveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		785D847F1F336653003B8B26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB45CBF9CE9A9A127878C75 /* Pods-RaveTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				DEVELOPMENT_TEAM = EEN5SMD5RF;
+				INFOPLIST_FILE = RaveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = flutterwave.RaveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		789CBAE720D00D8700DA2526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ThrivesendUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flutterwave.ThrivesendUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		789CBAE820D00D8700DA2526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ThrivesendUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flutterwave.ThrivesendUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		785D84601F336653003B8B26 /* Build configuration list for PBXProject "Rave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				785D84781F336653003B8B26 /* Debug */,
+				785D84791F336653003B8B26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		785D847A1F336653003B8B26 /* Build configuration list for PBXNativeTarget "Rave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				785D847B1F336653003B8B26 /* Debug */,
+				785D847C1F336653003B8B26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		785D847D1F336653003B8B26 /* Build configuration list for PBXNativeTarget "RaveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				785D847E1F336653003B8B26 /* Debug */,
+				785D847F1F336653003B8B26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		789CBAE620D00D8700DA2526 /* Build configuration list for PBXNativeTarget "ThrivesendUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				789CBAE720D00D8700DA2526 /* Debug */,
+				789CBAE820D00D8700DA2526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 785D845D1F336653003B8B26 /* Project object */;
+}

@@ -1,0 +1,41 @@
+PODS:
+  - BSErrorMessageView (1.1)
+  - KVNProgress (2.3.5)
+  - Shimmer (1.0.2)
+  - SwiftValidator (4.0.0)
+
+DEPENDENCIES:
+  - BSErrorMessageView (from `https://github.com/BenjaminSarkisyan/BSErrorMessageView.git`)
+  - KVNProgress
+  - Shimmer
+  - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`, branch `master`)
+
+SPEC REPOS:
+  trunk:
+    - KVNProgress
+    - Shimmer
+
+EXTERNAL SOURCES:
+  BSErrorMessageView:
+    :git: https://github.com/BenjaminSarkisyan/BSErrorMessageView.git
+  SwiftValidator:
+    :branch: master
+    :git: https://github.com/jpotts18/SwiftValidator.git
+
+CHECKOUT OPTIONS:
+  BSErrorMessageView:
+    :commit: e1523069939ac597f9b7a9c615d718f89c071b49
+    :git: https://github.com/BenjaminSarkisyan/BSErrorMessageView.git
+  SwiftValidator:
+    :commit: d370353b7a0ce758a53b189c81e485dcd53c99a4
+    :git: https://github.com/jpotts18/SwiftValidator.git
+
+SPEC CHECKSUMS:
+  BSErrorMessageView: 67cc7d172995fbc6df602c2b8923f48121ddf7a9
+  KVNProgress: d7046cce142f1aeb740db39dc3cacfe910fac354
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  SwiftValidator: 249b6b3ae3b294266c5b9de134d94f18f2d5aa47
+
+PODFILE CHECKSUM: f2ef1b97c02abe87bec0a9fbf6d3c629e16306cd
+
+COCOAPODS: 1.9.3
